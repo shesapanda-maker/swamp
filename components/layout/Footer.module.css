@@ -1,0 +1,28 @@
+.footerInner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Mobile */
+@media (max-width: 1024px) {
+  .footerInner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .footerLeft,
+  .footerCenter,
+  .footerRight {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footerCenter {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

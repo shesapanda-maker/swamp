@@ -1,0 +1,97 @@
+.nav {
+  position: relative;
+  width: 100%;
+  height: 68px;
+  top: -12px;
+}
+
+/* LOGO */
+.logo {
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+
+  width: 127px;
+  height: 95px;
+
+  transform: scale(0.5);
+  transform-origin: left bottom;
+  cursor: pointer;
+}
+
+/* MENU*/
+.desktopMenu {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/* CTA*/
+.desktopCta {
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+}
+
+/* BURGER */
+.burger {
+  display: none;
+  color:gray;
+
+  position: absolute;
+  right: 24px;
+  bottom: 0;
+
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+/* MOBILE MENU */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+ z-index: 1001;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+
+  background: var(--color-background);
+  z-index: 1001;
+}
+
+.close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* MOBILE BREAKPOINT */
+@media (max-width: 768px) {
+  .desktopMenu {
+    display: none;
+  }
+
+  .desktopCta {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+}
